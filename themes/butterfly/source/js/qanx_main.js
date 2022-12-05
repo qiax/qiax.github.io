@@ -12,7 +12,7 @@ var frameworkInfo = document.getElementsByClassName("framework-info")[0];
 footerWrap.removeChild(frameworkInfo);
 
 // 增加建站时间
-$("<span id='sitetime'></span>").appendTo(footerWrap);
+$("<div id='sitetime'></div>").appendTo(footerWrap);
 siteTime();
 
 //只在桌面版网页启用特效 
