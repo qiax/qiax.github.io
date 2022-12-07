@@ -9,7 +9,7 @@ tags:
   - 跨域
   - Cors
 categories:
-  - JS
+  - JavaScript
   - XMLHttpRequest
 description: '在前后端分离的项目中, 都需要配置跨域相关设置, 那么怎么才能快速的检验跨域配置是否生效？'
 date: 2022-11-22 13:56:29
