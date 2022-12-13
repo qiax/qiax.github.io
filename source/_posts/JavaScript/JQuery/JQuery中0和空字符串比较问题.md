@@ -9,7 +9,9 @@ tags:
   - JQuery
   - 比较
 categories:
-description: '在JQuery中空字符串和数字0比较的问题'
+  - JavaScript
+  - JQuery
+description: 在JQuery中空字符串和数字0比较的问题
 date: 2022-11-22 13:56:29
 img:
 coverImg:

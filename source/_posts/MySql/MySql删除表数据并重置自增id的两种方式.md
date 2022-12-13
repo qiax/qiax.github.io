@@ -10,6 +10,7 @@ tags:
   - delete
   - 重置自增 id
 categories:
+  - MySql
 date: 2022-12-12 13:37:20
 summary:
 ---
