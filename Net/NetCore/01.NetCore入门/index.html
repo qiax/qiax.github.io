@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>.NetCore入门 | 安客</title><meta name="author" content="Qanx"><meta name="copyright" content="Qanx"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="认识.NET.NET是一个开发平台 .NET也是 .NET Framework、[.Net Core](&#x2F;categories&#x2F;Net&#x2F;Net Core&#x2F;)、Xamarin&#x2F;Mono 的统称。  .Net Framework是Windows平台下进行软件开发的技术 .Net Core是一个免费、开源、跨平台的技术，程序可以运行在Windows、Li">
+<meta property="og:type" content="article">
+<meta property="og:title" content=".NetCore入门">
+<meta property="og:url" content="https://qiax.github.io/Net/NetCore/01.NetCore%E5%85%A5%E9%97%A8/index.html">
+<meta property="og:site_name" content="安客">
+<meta property="og:description" content="认识.NET.NET是一个开发平台 .NET也是 .NET Framework、[.Net Core](&#x2F;categories&#x2F;Net&#x2F;Net Core&#x2F;)、Xamarin&#x2F;Mono 的统称。  .Net Framework是Windows平台下进行软件开发的技术 .Net Core是一个免费、开源、跨平台的技术，程序可以运行在Windows、Li">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://files-cdn.cnblogs.com/files/blogs/280514/avatar.bmp">
+<meta property="article:published_time" content="2022-11-25T04:47:40.000Z">
+<meta property="article:modified_time" content="2022-12-13T06:11:07.809Z">
+<meta property="article:author" content="Qanx">
+<meta property="article:tag" content=".NetCore">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://files-cdn.cnblogs.com/files/blogs/280514/avatar.bmp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://qiax.github.io/Net/NetCore/01.NetCore%E5%85%A5%E9%97%A8/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '.NetCore入门',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-13 14:11:07'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="referrer" content="no-referrer"/> <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> <link rel="stylesheet" href="/css/qanx_main.css"> <link href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macWhite.css"> <link href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/macblack.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://files-cdn.cnblogs.com/files/blogs/280514/avatar.bmp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">安客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">.NetCore入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-11-25T04:47:40.000Z" title="发表于 2022-11-25 12:47:40">2022-11-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-13T06:11:07.809Z" title="更新于 2022-12-13 14:11:07">2022-12-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Net/">Net</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Net/NetCore/">NetCore</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=".NetCore入门"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="认识-NET"><a href="#认识-NET" class="headerlink" title="认识.NET"></a>认识.NET</h2><p><a href="/categories/Net/">.NET</a>是一个开发平台</p>
+<p><a href="/categories/Net/">.NET</a>也是 .NET Framework、[.Net Core](&#x2F;categories&#x2F;Net&#x2F;Net Core&#x2F;)、Xamarin&#x2F;Mono 的统称。</p>
+<blockquote>
+<p>.Net Framework是Windows平台下进行软件开发的技术</p>
+<p>.Net Core是一个免费、开源、跨平台的技术，程序可以运行在Windows、Linux、Mac等操作系统下</p>
+<p>Xamarin&#x2F;Mono是进行移动开发的技术（Xamarin、Unity），也可以做Web等跨平台开发，但是更专注于移动端</p>
+</blockquote>
+<p>C#是.NET平台下的一种编程语言。</p>
+<h3 id="NET-Core-对比-NET-Framework"><a href="#NET-Core-对比-NET-Framework" class="headerlink" title=".NET Core 对比 .NET Framework"></a>.NET Core 对比 .NET Framework</h3><p>尽管绝大部分用法没有变，.NET Core 不是 .NET Framework的升级版，不能直接升级。</p>
+<h4 id="NET-Framework-缺点"><a href="#NET-Framework-缺点" class="headerlink" title=".NET Framework 缺点"></a>.NET Framework 缺点</h4><ol>
+<li>它是系统级别的安装，不同程序会互相影响</li>
+<li>不能独立部署</li>
+<li>ASP.NET 和 IIS 深度耦合</li>
+<li>ASP.NET 资源消耗大</li>
+<li>非云原生</li>
+</ol>
+<h4 id="NET-Framework历史包袱"><a href="#NET-Framework历史包袱" class="headerlink" title=".NET Framework历史包袱"></a>.NET Framework历史包袱</h4><ol>
+<li>ASP.NET MVC架构在APS.NET WebForm之上的，底层受WebForm影响</li>
+<li>ASP.NET 底层不支持很好的单元测试</li>
+</ol>
+<h4 id="NET-Core的优点"><a href="#NET-Core的优点" class="headerlink" title=".NET Core的优点"></a>.NET Core的优点</h4><ol>
+<li>支持独立部署，不互相影响</li>
+<li>彻底模块化</li>
+<li>没有历史包袱，运行效率高</li>
+<li>不依赖IIS</li>
+<li>跨平台</li>
+<li>符合现代开发理念，有：依赖注入、单元测试等</li>
+</ol>
+<h4 id="NET-Core的不同点"><a href="#NET-Core的不同点" class="headerlink" title=".NET Core的不同点"></a>.NET Core的不同点</h4><p>.NET Core不支持包括：ASP.NET WebForms、WCF服务器端、WF、.NET Remoting、Appdomain。</p>
+<p>.NET Core支持部分 Windows-Only 的特性，但会导致程序无法跨平台：WinForm、WPF、注册表、Event Log、AD等。</p>
+<h3 id="Cloud-Computing——云计算"><a href="#Cloud-Computing——云计算" class="headerlink" title="Cloud Computing——云计算"></a>Cloud Computing——云计算</h3><p>Microsoft Azure是全球第二大云计算厂商</p>
+<blockquote>
+<p>.Net Core为云而生，但不止于云，不止于Azure</p>
+</blockquote>
+<p>自适应程序：有一个检查机制，可以检测到突发的访问增加趋势，然后根据需求自动购买服务器。当检测到访问降低，服务器有冗余，自动释放服务器。</p>
+<p><img src="http://img.fabbwal.cn/image/image-20221206173538190.png" alt="image-20221206173538190"></p>
+<p>文章为个人学习笔记，学习自<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pK41137He">B站 杨中科 .NET 6教程</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://qiax.github.io">Qanx</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://qiax.github.io/Net/NetCore/01.NetCore%E5%85%A5%E9%97%A8/">https://qiax.github.io/Net/NetCore/01.NetCore%E5%85%A5%E9%97%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://qiax.github.io" target="_blank">安客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/NetCore/">.NetCore</a></div><div class="post_share"><div class="social-share" data-image="https://files-cdn.cnblogs.com/files/blogs/280514/avatar.bmp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Books/ReadingList/"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">待阅读清单</div></div></a></div><div class="next-post pull-right"><a href="/JavaScript/JQuery/JQuery%E4%B8%AD0%E5%92%8C%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83%E9%97%AE%E9%A2%98/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JQuery中0和空字符串比较问题</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/Books/ReadingList/" title="待阅读清单"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-04</div><div class="title">待阅读清单</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://files-cdn.cnblogs.com/files/blogs/280514/avatar.bmp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Qanx</div><div class="author-info__description">find a balance between work and life.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/qiax"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/qiax" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:342927916@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%A4%E8%AF%86-NET"><span class="toc-number">1.</span> <span class="toc-text">认识.NET</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#NET-Core-%E5%AF%B9%E6%AF%94-NET-Framework"><span class="toc-number">1.1.</span> <span class="toc-text">.NET Core 对比 .NET Framework</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#NET-Framework-%E7%BC%BA%E7%82%B9"><span class="toc-number">1.1.1.</span> <span class="toc-text">.NET Framework 缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NET-Framework%E5%8E%86%E5%8F%B2%E5%8C%85%E8%A2%B1"><span class="toc-number">1.1.2.</span> <span class="toc-text">.NET Framework历史包袱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NET-Core%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">1.1.3.</span> <span class="toc-text">.NET Core的优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NET-Core%E7%9A%84%E4%B8%8D%E5%90%8C%E7%82%B9"><span class="toc-number">1.1.4.</span> <span class="toc-text">.NET Core的不同点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cloud-Computing%E2%80%94%E2%80%94%E4%BA%91%E8%AE%A1%E7%AE%97"><span class="toc-number">1.2.</span> <span class="toc-text">Cloud Computing——云计算</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/MySql/MySql%E5%88%A0%E9%99%A4%E8%A1%A8%E6%95%B0%E6%8D%AE%E5%B9%B6%E9%87%8D%E7%BD%AE%E8%87%AA%E5%A2%9Eid%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/" title="MySql删除表数据的两种方式">MySql删除表数据的两种方式</a><time datetime="2022-12-12T05:37:20.000Z" title="发表于 2022-12-12 13:37:20">2022-12-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/Other/Error/Warning/https%E8%AF%B7%E6%B1%82http%E8%B5%84%E6%BA%90%E8%AD%A6%E5%91%8A/" title="https请求http资源警告">https请求http资源警告</a><time datetime="2022-12-07T09:42:38.000Z" title="发表于 2022-12-07 17:42:38">2022-12-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/Books/ReadingList/" title="待阅读清单">待阅读清单</a><time datetime="2022-12-04T07:14:04.000Z" title="发表于 2022-12-04 15:14:04">2022-12-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/Net/NetCore/01.NetCore%E5%85%A5%E9%97%A8/" title=".NetCore入门">.NetCore入门</a><time datetime="2022-11-25T04:47:40.000Z" title="发表于 2022-11-25 12:47:40">2022-11-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/JavaScript/JQuery/JQuery%E4%B8%AD0%E5%92%8C%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83%E9%97%AE%E9%A2%98/" title="JQuery中0和空字符串比较问题">JQuery中0和空字符串比较问题</a><time datetime="2022-11-22T05:56:29.000Z" title="发表于 2022-11-22 13:56:29">2022-11-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Qanx</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><div class="copyright">©2020 Qanx ❤ <a target="_blank" rel="noopener" href='https://beian.miit.gov.cn/' style='color:#858585 !important'>豫ICP备2021033723号</a></div></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script> <script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js"></script> <script src="/js/qanx_main.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body></html>
